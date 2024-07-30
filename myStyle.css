@@ -23,6 +23,19 @@
     font-weight: bold;
 }
 
+/* 페이지 */
+#page1 {
+    display: block;
+}
+
+#page2 {
+    display: none;
+}
+
+#page3 {
+    display: none;
+}
+
 /* 전체 스타일 */
 body {
     margin: 0;
@@ -30,6 +43,7 @@ body {
     font-family: 'NetflixSansRegular', sans-serif;
 }
 
+/* Page1 */
 /* 첫 번째 섹션 */
 .first-section {
     background: rgba(0, 0, 0, 0.5);
@@ -76,6 +90,10 @@ body {
     color: white;
     padding: 72px 0;
     height: 610px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 8px solid #313131;
 }
 
 .accordion-item {
@@ -113,6 +131,14 @@ body {
     color: #757575;
     padding: 50px 0;
 }
+
+
+/* Page2 */
+.profile-img {
+    width: "95px";
+    height: "95px";
+}
+
 
 /* 반응형 디자인을 위한 미디어 쿼리 */
 @media (max-width: 768px) {
