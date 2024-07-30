@@ -1,0 +1,127 @@
+/* 폰트 */
+@font-face {
+    font-family: "NetflixSansRegular";
+    src: url("./public/font/NetflixSansRegular.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NetflixSansBlack";
+    src: url("./public/font//NetflixSansBlack.ttf") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+.fs-regular {
+    font-family: 'NetflixSansRegular', sans-serif;
+    font-weight: normal;
+}
+
+.fs-bold {
+    font-family: 'NetflixSansBlack', sans-serif;
+    font-weight: bold;
+}
+
+/* 전체 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'NetflixSansRegular', sans-serif;
+}
+
+/* 첫 번째 섹션 */
+.first-section {
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 700px;
+    color: white;
+}
+
+.back-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.back-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.first-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+/*  컨텐츠 섹션 */
+.content-section {
+    background-color: #000;
+    color: white;
+    padding: 72px 0;
+    height: 610px;
+}
+
+.accordion-item {
+    background-color: #000;
+    color: white;
+    border: none;
+}
+
+.accordion-button {
+    background-color: #000;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #333;
+    color: white;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+    background-color: #000;
+    color: #8c8c8c;
+}
+
+/* 푸터 */
+.footer-section {
+    background-color: #000;
+    color: #757575;
+    padding: 50px 0;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    .first-content h1 {
+        font-size: 2rem;
+    }
+
+    .first-content h4,
+    .first-content h5 {
+        font-size: 1rem;
+    }
+}
