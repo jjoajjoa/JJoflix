@@ -22,22 +22,22 @@
                 <div class="container-fluid mt-2 fs-regular">
                     <div class="row">
                         <nav class="navbar">
-                            <div class="col-8">
+                            <div class="col-md-9">
                                 <a class="navbar-brand" href="#">
                                     <img src="./public/images/JJoflix.png" alt="Logo" width="170" height="60"
                                         class="d-inline-block align-text-top ms-3">
                                 </a>
                             </div>
-                            <div class="col-1">
-                                <form class="d-flex align-items-end justify-content-end" role="search">
+                            <div class="col-1 d-flex justify-content-end">
+                                <form role="search">
                                     <select class="form-select" aria-label="Default select example">
-                                        <option value="ko" selected>Korean</option>
-                                        <option value="en">English</option>
+                                        <option value="ko">Korean</option>
+                                        <option value="en" selected>English</option>
                                     </select>
                                 </form>
                             </div>
                             <div class="col-1">
-                                <button class="btn btn-danger" type="submit">Sign In</button>
+                                <button class="btn btn-danger btn-red" type="submit">Sign In</button>
                             </div>
                         </nav>
                     </div>
@@ -51,14 +51,16 @@
                             <h1 class="fs-bold">Unlimited 쪼랭 Images, Videos, and more</h1>
                             <h4>Watch anywhere. Cancel anytime.</h4>
                             <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
-                            <div class="d-flex justify-content-center p-2">
-                                <form class="d-flex" role="search">
-                                    <input id="inputEmail" class="form-control me-2" type="email"
-                                        placeholder="Email address" aria-label="Search"
-                                        style="width: 280px; background-color: rgba(0, 0, 0, 0.438);">
-                                    <button id="btnEmail" class="btn btn-danger btn-lg" type="submit"
-                                        style="width: 180px;"> Get Started 〉 </button>
-                                </form>
+                            <div class="row">
+                                <div class="d-flex justify-content-center p-2">
+                                    <form class="d-flex col-6" role="search">
+                                        <input id="inputEmail" class="form-control me-2 inputEmail" type="email"
+                                            placeholder="Email address" aria-label="Search">
+                                        <button id="btnEmail" class="col-4 btn btn-danger btn-lg btnEmail "
+                                            type="submit">
+                                            Get Started 〉 </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -67,30 +69,29 @@
         </div>
 
         <div class="content-section">
-            <div class="container d-flex align-items-center" style="border: 2px solid aquamarine; height: 475px;">
+            <div class="container d-flex align-items-center justify-content-center" style="height: 475px;">
                 <div class="row">
-                    <div class="col-6" style="border: 2px solid olive;">
+                    <div class="col-6 align-content-center">
                         <h1 class="fs-bold">Enjoy on your TV</h1>
-                        <h4>Watch on Smart TVs, Playstation, Xbox, Chromecast, <br> Apple TV, Blu-ray players, and more.
+                        <h4>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
                         </h4>
                     </div>
-                    <div class="col-6" style="border: 2px solid olive;">
-                        <p>Enjoy unlimited streaming of JJoraeng content. Watch on any device, anytime, anywhere.</p>
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="./public/images/jjogif1.gif" style="width: 400px; height: 400px;">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="content-section">
-            <div class="container d-flex align-items-center" style="height: 475px;">
+            <div class="container d-flex align-items-center justify-content-center" style="height: 475px;">
                 <div class="row">
-                    <div class="col-6">
-                        <p>Enjoy unlimited streaming of JJoraeng content. Watch on any device, anytime, anywhere.</p>
-
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="./public/images/jjogif2.gif" style="width: 400px; height: 400px;">
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 align-content-center">
                         <h1 class="fs-bold">Watch everywhere</h1>
-                        <h4>Stream unlimited movies and TV shows on your phone, <br> tablet, laptop, and TV.</h4>
+                        <h4>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
                     </div>
                 </div>
             </div>
@@ -215,42 +216,50 @@
 
     <!--Start page2-->
     <div id="page2" style="display: none;">
-        <div class="content-section">
-            <div class="container align-items-center" style="border: 2px solid aquamarine; height: 475px;">
-                <div class="row" style="border: 2px solid tomato;">
-                    <h1 class="fs-regular text-center mb-4">쪼플릭스를 시청할 프로필을 선택하세요.</h1>
+        <div class="choice-section">
+            <div class="container align-items-center">
+                <div class="row">
+                    <h1 class="fs-regular text-center mb-5">쪼플릭스를 시청할 프로필을 선택하세요.</h1>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <div class="col-2" style="border: 2px solid olive;">
-                        <button type="button">
-                            <img class="img-thumbnail profile-img" src="./public/images/profile1.png" alt="대체 텍스트"
+                    <div class="col-2">
+                        <button class="btn-clear" type="button">
+                            <img class="rounded profile-img" src="./public/images/profile-jjoraeng.jpg"
                                 onclick="showPage3()">
                         </button>
-                        <p>ddd</p>
+                        <h5 style="color: #8c8c8c; margin-top: 10px;">김쪼랭</h5>
                     </div>
-                    <div class="col-2" style="border: 2px solid olive;">
-                        <button type="button">
-                            <img src="이미지 파일 경로" alt="대체 텍스트" onclick="">
+                    <div class="col-2">
+                        <button class="btn-clear" type="button">
+                            <img class="rounded profile-img" src="./public/images/profile-bbosik.jpg"
+                                onclick="showPage3()">
                         </button>
+                        <h5 style="color: #8c8c8c; margin-top: 10px;">허뽀식</h5>
                     </div>
-                    <div class="col-2" style="border: 2px solid olive;">
-                        <button type="button">
-                            <img src="이미지 파일 경로" alt="대체 텍스트" onclick="">
+                    <div class="col-2">
+                        <button class="btn-clear" type="button">
+                            <img class="rounded profile-img" src="./public/images/profile-podo.jpg"
+                                onclick="showPage3()">
                         </button>
+                        <h5 style="color: #8c8c8c; margin-top: 10px;">이포도</h5>
                     </div>
-                    <div class="col-2" style="border: 2px solid olive;">
-                        <button type="button">
-                            <img src="이미지 파일 경로" alt="대체 텍스트" onclick="">
+                    <div class="col-2">
+                        <button class="btn-clear" type="button">
+                            <img class="rounded profile-img" src="./public/images/profile-maru.png"
+                                onclick="showPage3()">
                         </button>
+                        <h5 style="color: #8c8c8c; margin-top: 10px;">최마루</h5>
                     </div>
-                    <div class="col-2" style="border: 2px solid olive;">
-                        <button type="button">
-                            <img src="이미지 파일 경로" alt="대체 텍스트" onclick="">
+                    <div class="col-2">
+                        <button class="btn-clear" type="button">
+                            <img class="rounded profile-img" src="./public/images/profile-cheese.jpg" alt="대체 텍스트"
+                                onclick="showPage3()">
                         </button>
+                        <h5 style="color: #8c8c8c; margin-top: 10px;">김치즈</h5>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center" style="width: 100px;">
-                    <button class="btn btn-outline-secondary btn-sm">프로필 관리</button>
+                <div class="row d-flex align-content-center justify-content-center">
+                    <button class="btn btn-outline-secondary mt-5" style="width: 150px;">프로필 관리</button>
                 </div>
             </div>
         </div>
@@ -259,10 +268,75 @@
 
     <!--Start page3-->
     <div id="page3" style="display: none;">
-        <div class="content-section">
-            <div class="container align-items-center" style="border: 2px solid aquamarine; height: 475px;">
+        <div class="home-section">
+
+            <div class="home-navbar-container">
+                <div class="container-fluid mt-2 fs-regular">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg navbar-custom navbar-transparent fixed-top">
+                            <div class="col-1 d-flex justify-content-start">
+                                <a class="navbar-brand" href="#">
+                                    <img src="./public/images/JJoflix.png" alt="Logo" width="92" height="31"
+                                        class="d-inline-block align-text-top ms-3">
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">홈</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">시리즈</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">영화</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">NEW! 요즘 대세 콘텐츠</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">내가 찜한 리스트</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">언어별로 찾아보기</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-1">
+                                <button class="btn btn-danger btn-red" type="submit"></button>
+                            </div>
+                            <div class="col-1">
+                                <button class="btn btn-danger btn-red" type="submit">Sign In</button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--ENd Nav-->
+
+            <div class="container-fluid home-video-section" style="border: 2px solid aquamarine;">
                 <p>dduu</p>
             </div>
+            <div class="container-fluid home-list-section" style="border: 2px solid aquamarine;">
+                <div class="home-list-section" style="border: 2px solid tomato;">
+
+                    <div class="card-slider">
+                        <button class="arrow arrow-left" onclick="scrollLeft()">&#9664;</button>
+                        <div class="cards-container" id="cards-container">
+                            <div class="card">
+                                <img src="./public/images/profile-jjoraeng.jpg" class="card-img-top" alt="Card Image">
+                            </div>
+                            
+                            
+                        </div>
+                        <button class="arrow arrow-right" onclick="scrollRight()">&#9654;</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
         </div>
     </div>
     <!--End page3-->

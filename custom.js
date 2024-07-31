@@ -12,6 +12,18 @@ window.addEventListener('DOMContentLoaded', async () => {
     btnEmail.addEventListener('click', changePage2);
 
     showPage1();  // 초기 화면을 페이지 1로 설정
+
+    //Page3에서 네비바 스크롤에 따라 반투명불투명 바꾸기
+    const navbar = document.querySelector('.navbar-custom');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 50) { // 스크롤 위치가 50px 이상일 때
+            navbar.classList.remove('navbar-transparent');
+            navbar.classList.add('navbar-opaque');
+        } else { // 스크롤 위치가 50px 이하일 때
+            navbar.classList.remove('navbar-opaque');
+            navbar.classList.add('navbar-transparent');
+        }
+    });
 });
 
 function changePage2(event) {
@@ -22,6 +34,20 @@ function changePage2(event) {
     } else {
         alert('이메일이 다릅니다');
     }
+}
+
+function scrollLeft() {
+    document.getElementById('cards-container').scrollBy({
+        left: -200,
+        behavior: 'smooth'
+    });
+}
+
+function scrollRight() {
+    document.getElementById('cards-container').scrollBy({
+        left: 200,
+        behavior: 'smooth'
+    });
 }
 
 // 첫 화면(1) | 선택 화면(2) | 주 화면(3)
