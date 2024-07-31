@@ -97,14 +97,11 @@ body {
 
 .d-flex .inputEmail {
     background-color: rgba(0, 0, 0, 0.5);
-    /* 반투명 검은색 배경 */
     color: white;
-    /* 흰색 텍스트 */
 }
 
 .d-flex .inputEmail::placeholder {
     color: rgba(255, 255, 255, 0.7);
-    /* 반투명 흰색 플레이스홀더 */
 }
 
 .btnEmail {
@@ -205,7 +202,8 @@ body {
 }
 
 .home-section .home-list-section {
-    height: 200px;
+    /* height: 200px; */
+    margin-top: 50px;
 }
 
 .navbar-custom {
@@ -239,7 +237,6 @@ body {
 
 .cards-container {
     display: flex;
-    overflow-x: auto; /* 가로 스크롤을 허용 */
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; /* iOS에서 부드러운 스크롤 지원 */
 }
