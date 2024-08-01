@@ -24,6 +24,24 @@ window.addEventListener('DOMContentLoaded', async () => {
             navbar.classList.add('navbar-transparent');
         }
     });
+
+
+function showItemDetail() {
+    alert(':-P');
+}
+
+
+
+    //page3에서 썸네일 호버시 카드 나오게
+    const thumbnail = document.getElementById('thumbnail');
+    const cardOverlay = document.getElementById('card-overlay');
+    thumbnail.addEventListener('mouseover', function() {
+        cardOverlay.style.display = 'flex';
+    });
+    thumbnail.addEventListener('mouseout', function() {
+        cardOverlay.style.display = 'none';
+    });
+
 });
 
 function changePage2(event) {

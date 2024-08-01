@@ -17,22 +17,22 @@
                 <div class="container-fluid mt-2 fs-regular">
                     <div class="row">
                         <nav class="navbar">
-                            <div class="col-8">
+                            <div class="col-md-9">
                                 <a class="navbar-brand" href="#">
                                     <img src="./public/images/JJoflix.png" alt="Logo" width="170" height="60"
                                         class="d-inline-block align-text-top ms-3">
                                 </a>
                             </div>
-                            <div class="col-1">
-                                <form class="d-flex align-items-end justify-content-end" role="search">
+                            <div class="col-1 d-flex justify-content-end">
+                                <form role="search">
                                     <select class="form-select" aria-label="Default select example">
-                                        <option value="ko" selected>Korean</option>
-                                        <option value="en">English</option>
+                                        <option value="ko">Korean</option>
+                                        <option value="en" selected>English</option>
                                     </select>
                                 </form>
                             </div>
                             <div class="col-1">
-                                <button class="btn btn-danger" type="submit">Sign In</button>
+                                <button class="btn btn-danger btn-red" type="submit">Sign In</button>
                             </div>
                         </nav>
                     </div>
@@ -46,14 +46,16 @@
                             <h1 class="fs-bold">Unlimited 쪼랭 Images, Videos, and more</h1>
                             <h4>Watch anywhere. Cancel anytime.</h4>
                             <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
-                            <div class="d-flex justify-content-center p-2">
-                                <form class="d-flex" role="search">
-                                    <input id="inputEmail" class="form-control me-2" type="email"
-                                        placeholder="Email address" aria-label="Search"
-                                        style="width: 280px; background-color: rgba(0, 0, 0, 0.438);">
-                                    <button id="btnEmail" class="btn btn-danger btn-lg" type="submit"
-                                        style="width: 180px;"> Get Started 〉 </button>
-                                </form>
+                            <div class="row">
+                                <div class="d-flex justify-content-center p-2">
+                                    <form class="d-flex col-6" role="search">
+                                        <input id="inputEmail" class="form-control me-2 inputEmail" type="email"
+                                            placeholder="Email address" aria-label="Search">
+                                        <button id="btnEmail" class="col-4 btn btn-danger btn-lg btnEmail "
+                                            type="submit">
+                                            Get Started 〉 </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,30 +64,29 @@
         </div>
 
         <div class="content-section">
-            <div class="container d-flex align-items-center" style="border: 2px solid aquamarine; height: 475px;">
+            <div class="container d-flex align-items-center justify-content-center" style="height: 475px;">
                 <div class="row">
-                    <div class="col-6" style="border: 2px solid olive;">
+                    <div class="col-6 align-content-center">
                         <h1 class="fs-bold">Enjoy on your TV</h1>
-                        <h4>Watch on Smart TVs, Playstation, Xbox, Chromecast, <br> Apple TV, Blu-ray players, and more.
+                        <h4>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
                         </h4>
                     </div>
-                    <div class="col-6" style="border: 2px solid olive;">
-                        <p>Enjoy unlimited streaming of JJoraeng content. Watch on any device, anytime, anywhere.</p>
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="./public/images/jjogif1.gif" style="width: 400px; height: 400px;">
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="content-section">
-            <div class="container d-flex align-items-center" style="height: 475px;">
+            <div class="container d-flex align-items-center justify-content-center" style="height: 475px;">
                 <div class="row">
-                    <div class="col-6">
-                        <p>Enjoy unlimited streaming of JJoraeng content. Watch on any device, anytime, anywhere.</p>
-
+                    <div class="col-6 d-flex justify-content-center">
+                        <img src="./public/images/jjogif2.gif" style="width: 400px; height: 400px;">
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 align-content-center">
                         <h1 class="fs-bold">Watch everywhere</h1>
-                        <h4>Stream unlimited movies and TV shows on your phone, <br> tablet, laptop, and TV.</h4>
+                        <h4>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
                     </div>
                 </div>
             </div>
