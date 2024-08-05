@@ -26,19 +26,19 @@ window.addEventListener('DOMContentLoaded', async () => {
     });
 
 
-function showItemDetail() {
-    alert(':-P');
-}
+    function showItemDetail() {
+        alert(':-P');
+    }
 
 
 
     //page3에서 썸네일 호버시 카드 나오게
     const thumbnail = document.getElementById('thumbnail');
     const cardOverlay = document.getElementById('card-overlay');
-    thumbnail.addEventListener('mouseover', function() {
+    thumbnail.addEventListener('mouseover', function () {
         cardOverlay.style.display = 'flex';
     });
-    thumbnail.addEventListener('mouseout', function() {
+    thumbnail.addEventListener('mouseout', function () {
         cardOverlay.style.display = 'none';
     });
 
@@ -54,6 +54,38 @@ function changePage2(event) {
     }
 }
 
+//page1 FAQ 콜랩스
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+function collapse(element) {
+    var before = document.getElementsByClassName("active")[0]; // 기존에 활성화된 버튼
+    if (before && before != element) {  // 자신 이외에 이미 활성화된 버튼이 있으면
+        before.nextElementSibling.style.maxHeight = null; // 기존에 펼쳐진 내용 접고
+        before.classList.remove("active"); // 버튼 비활성화
+    }
+
+    element.classList.toggle("active"); // 활성화 여부 toggle
+
+    var content = element.nextElementSibling;
+    if (element.classList.contains("active")) { // 버튼이 활성화된 경우
+        content.style.maxHeight = content.scrollHeight + "px"; // 펼치기
+    } else {
+        content.style.maxHeight = null; // 접기
+    }
+}
+
+
 function scrollLeft() {
     document.getElementById('cards-container').scrollBy({
         left: -200,
@@ -67,6 +99,7 @@ function scrollRight() {
         behavior: 'smooth'
     });
 }
+
 
 // 첫 화면(1) | 선택 화면(2) | 주 화면(3)
 function showPage1() {

@@ -10,6 +10,7 @@ const path = require('path');
 //     password: 'admin'
 // })
 
+
 BigInt.prototype.toJSON = () => {
     return this.toString();
 }
@@ -28,6 +29,6 @@ app.get('/', (req, res) => {
 
 const port = 7001;
 server.listen(port, () => {
-    console.log(`server is listening at localhost:${port}`);
+    console.log(`server is listening at http://localhost:${port}`);
 });
 console.log(`웹서버 실행 요청함`);
